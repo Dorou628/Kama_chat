@@ -219,25 +219,6 @@ staticFilePath = "./static/files"
 
 ## 🚀 启动方法
 
-### 方式一：一键启动（推荐）
-
-#### Windows用户
-```bash
-# 双击运行批处理文件
-start_services.bat
-
-# 或在命令行中运行
-.\start_services.bat
-```
-
-#### PowerShell用户
-```powershell
-# 运行PowerShell脚本
-.\start_services.ps1
-```
-
-### 方式二：手动启动
-
 #### 1. 启动Redis
 ```bash
 # Windows
@@ -263,20 +244,6 @@ npm run serve
 # 或
 yarn serve
 ```
-
-### 停止服务
-```powershell
-# 运行停止脚本
-.\stop_services.ps1
-```
-
-## 🌐 访问地址
-
-启动成功后，可以通过以下地址访问：
-
-- **前端应用**: http://localhost:8080
-- **后端API**: http://localhost:8000
-- **WebSocket**: ws://localhost:8000/ws
 
 ## 📱 功能说明
 
@@ -344,24 +311,3 @@ const ICE_CFG = {
 - 检查后端服务是否启动
 - 确认端口配置正确
 - 检查防火墙设置
-
-## 📄 许可证
-
-本项目采用 MIT 许可证，详情请参阅 [LICENSE](LICENSE) 文件。
-
-## 🤝 贡献
-
-欢迎提交 Issue 和 Pull Request 来改进项目！
-
-## 📞 联系方式
-
-如有问题或建议，请通过以下方式联系：
-
-- GitHub Issues: [提交问题](https://github.com/Dorou628/Kama_chat/issues)
-- 项目地址: https://github.com/Dorou628/Kama_chat
-
----
-
-<div align="center">
-  <p>⭐ 如果这个项目对你有帮助，请给个Star支持一下！</p>
-</div>
