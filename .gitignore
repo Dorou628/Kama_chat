@@ -1,0 +1,64 @@
+### Go template
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+.idea
+.idea/*
+
+*.xml
+
+*_local.go
+*_local.toml
+
+vendor/*
+
+*.log
+
+static/avatars/*
+
+static/files/*
+
+web/chat-server/src/assets/cert/*
+
+internal/service/kafka/start.bat
+
+*.sh
+
+*.ext
+
+# SSL证书文件（重要：绝对不能上传）
+pkg/ssl/*.pem
+pkg/ssl/*.pfx
+pkg/ssl/cert.pfx
+pkg/ssl/temp.pfx
+
+# 数据库文件
+*.db
+dump.rdb
+web/chat-server/dump.rdb
+
+# 编译后的可执行文件
+kama_chat_server.exe
+kama_chat_server.exe~
+cmd/kama_chat_server/kama_chat_backend
+
+# Node.js 相关
+web/chat-server/node_modules/
+web/chat-server/dist/
+
+# 日志文件
+your log path
+cmd/kama_chat_server/logs/

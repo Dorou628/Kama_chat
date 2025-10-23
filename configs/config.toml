@@ -1,0 +1,49 @@
+[mainConfig]
+appName = "your app name"
+host = "0.0.0.0"
+port = 8000
+
+[mysqlConfig]
+host = "127.0.0.1"
+port = 3306
+user = "root"
+password = "Fuerwen050504"
+databaseName = "kama_chat"
+
+[redisConfig]
+host = "127.0.0.1"
+port = 6379
+password = ""
+db = 0
+
+[authCodeConfig]
+accessKeyID = "PLACEHOLDER_ACCESS_KEY_ID"
+accessKeySecret = "PLACEHOLDER_ACCESS_KEY_SECRET"
+signName = "阿里云短信测试"
+templateCode = "SMS_154950909"
+
+# 号码认证服务配置（推荐使用，无需企业资质）
+[smsAuthConfig]
+accessKeyID = "PLACEHOLDER_ACCESS_KEY_ID"
+accessKeySecret = "PLACEHOLDER_ACCESS_KEY_SECRET"
+useNewService = true  # 设置为true使用号码认证服务，false使用传统短信服务
+
+[logConfig]
+logPath = "your log path"
+
+[kafkaConfig]
+messageMode = "channel"# 消息模式 channel or kafka or hybrid
+hostPort = "127.0.0.1:9092" # "127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094" 多个kafka服务器
+loginTopic = "login"
+chatTopic = "chat_message"
+logoutTopic = "logout"
+partition = 0 # kafka partition
+timeout = 1 # 单位秒
+# 混合模式配置参数
+hybridThreshold = 0.8 # 触发切换的阈值比例 (4/5 = 0.8)
+hybridMonitorInterval = 1 # 监控间隔时间(秒)
+hybridSwitchDuration = 5 # 持续时间阈值(秒)
+
+[staticSrcConfig]
+staticAvatarPath = "./static/avatars"
+staticFilePath = "./static/files"
